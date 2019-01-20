@@ -22,7 +22,11 @@ bot.on('message' , message => {
     if (message.content.match(/salut/i)){
         message.channel.send(":wave:");
         console.log('salut');
-    }    
+    }       
+    if (message.content.match(/j'y go/i)){
+        message.channel.send("d'agneau");
+        console.log('go');
+    }  
     if (message.content.includes ("c'est parti")){
         message.channel.send("C'est darty mon kiki !");
         console.log('darty');
