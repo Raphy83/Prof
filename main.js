@@ -23,7 +23,7 @@ bot.on('message' , message => {
         message.channel.send(":wave:");
         console.log('salut');
     }       
-    if (message.content.match(/j'y go/i)){
+    if (message.content.match(/j\'y go/i)){
         message.channel.send("d'agneau");
         console.log('go');
     }  
