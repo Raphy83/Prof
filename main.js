@@ -82,6 +82,7 @@ bot.on('message' , message => {
         console.log('question');
     }  
     if (message.content.startsWith(prefix + "say")){
+        if(message.author.bot) return;
         message.delete();
         message.channel.send(message);
     }     
