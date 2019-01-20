@@ -9,7 +9,6 @@ bot.on('ready', () => {
     console.log('bot Ready !');
 });
 bot.on('message' , message => {
-    if (message.author.id != "536108911703359498");
     if (message.content.match(/bonjour/i)){
         message.reply("Je vous souhaite également une bonne journée ! Aller ! Au boulot !");
         console.log('bonjour');
@@ -81,10 +80,6 @@ bot.on('message' , message => {
     if (message.content.match(/question/i)){
         message.channel.send("réponse :stuck_out_tongue_closed_eyes:");
         console.log('question');
-    }  
-    if (message.content.startsWith(prefix + "say")){
-        message.delete();
-        message.channel.send(message);
     }     
     const swearWords = ["socioconstructivisme", "inférence", "socio-constructivisme", "conjecture"];
 if( swearWords.some(word => message.content.includes(word)) ) {
