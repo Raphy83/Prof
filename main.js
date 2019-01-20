@@ -32,7 +32,7 @@ bot.on('message' , message => {
         console.log('darty');
     }    
     if (message.content.includes ("qui es-tu prof")){
-        message.channel.send("Puisque celà ne se voit pas, je suis un BOT, un agent logiciel automatique ou semi-automatique qui interagit avec des serveurs informatiques. Un BOT se connecte et interagit avec le serveur comme un programme client utilisé par un humain (mouarf), d'où le terme « BOT », qui est la contraction par aphérèse de \"robot\". Je vous laisse chercher ce mot, ça pourrait vous servir ...");
+        message.channel.send("Puisque celà ne se voit pas, je suis un BOT, un agent logiciel automatique ou semi-automatique qui interagit avec des serveurs informatiques. Un BOT se connecte et interagit avec le serveur comme un programme client utilisé par un humain (mouarf), d'où le terme « BOT », qui est la contraction par **aphérèse** de \"ROBOT\". Je vous laisse chercher ce mot, ça pourrait vous servir ...");
         console.log('qui');
     }    
     if (message.content.match(/a plus/i)){
