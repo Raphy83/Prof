@@ -40,6 +40,14 @@ bot.on('message' , message => {
         message.channel.send("dans l\'bus !:bus:");
         console.log('plus');
     }  
+    if (message.content.match(/ca marche/i)){
+        message.channel.send("ça court même !");
+        console.log('marche1');
+    }  
+    if (message.content.match(/ça marche/i)){
+        message.channel.send("ça court même !");
+        console.log('marche2');
+    }  
     if (message.content.match(/hello/i)){
         message.channel.send("Hi, how are you ?");
         console.log('hello');
