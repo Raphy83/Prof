@@ -82,7 +82,7 @@ bot.on('message' , message => {
         console.log('question');
     }  
     if (message.content.startsWith(prefix + "say")){
-        if(message.author.bot) return;
+        if(message.author.id != "536108911703359498");
         message.delete();
         message.channel.send(message);
     }     
