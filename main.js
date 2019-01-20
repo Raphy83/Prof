@@ -32,7 +32,7 @@ bot.on('message' , message => {
         console.log('darty');
     }    
     if (message.content.match(/a plus/i)){
-        message.channel.send("dans l'bus !:bus:");
+        message.channel.send("dans l\'bus !:bus:");
         console.log('plus');
     }  
     if (message.content.match(/hello/i)){
