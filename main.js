@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 var bot = new Discord.Client();
 const cfg = require('./index.json');
-
+const token = process.env.token;
 bot.on('ready', () => {
     bot.user.setPresence({ game: { name:'motiver les gens' , type: 0} });
     console.log('bot Ready !');
@@ -73,4 +73,4 @@ if( swearWords.some(word => message.content.includes(word)) ) {
 }
 });
 
-bot.login(cfg.token);
+bot.login(token);
