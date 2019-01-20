@@ -2,15 +2,13 @@ const Discord = require('discord.js');
 var bot = new Discord.Client();
 const cfg = require('./index.json');
 const token = process.env.token;
-var prefix = "/";
+var prefix = ("/");
 
 bot.on('ready', () => {
     bot.user.setPresence({ game: { name:'motiver les gens' , type: 0} });
     console.log('bot Ready !');
 });
 bot.on('message' , message => {
-    if (message.author.bot) return;
-    }
     if (message.content.match(/bonjour/i)){
         message.reply("Je vous souhaite également une bonne journée ! Aller ! Au boulot !");
         console.log('bonjour');
