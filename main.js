@@ -79,6 +79,10 @@ bot.on('message' , message => {
         message.channel.send("réponse :stuck_out_tongue_closed_eyes:");
         console.log('question');
     }  
+    if (message.content.startsWith(prefix + "say")){
+        message.delete();
+        message.channel.send(message);
+    }     
     const swearWords = ["socioconstructivisme", "inférence", "socio-constructivisme", "conjecture"];
 if( swearWords.some(word => message.content.includes(word)) ) {
   message.reply("Ohhhhhhhhhh ! Bravo ! :clap:");
