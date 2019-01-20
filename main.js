@@ -9,7 +9,7 @@ bot.on('ready', () => {
     console.log('bot Ready !');
 });
 bot.on('message' , message => {
-    if (message.author.id!="536108911703359498");
+    if (message.author.bot) return;
     }
     if (message.content.match(/bonjour/i)){
         message.reply("Je vous souhaite également une bonne journée ! Aller ! Au boulot !");
