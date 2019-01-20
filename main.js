@@ -83,7 +83,7 @@ bot.on('message' , message => {
     }  
     if (message.content.startsWith(prefix + "say")){
         message.delete();
-        message.channel.send(message);
+        message.channel.send(message.content);
     }     
     const swearWords = ["socioconstructivisme", "inférence", "socio-constructivisme", "conjecture"];
 if( swearWords.some(word => message.content.includes(word)) ) {
