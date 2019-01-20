@@ -30,7 +30,11 @@ bot.on('message' , message => {
     if (message.content.includes ("c'est parti")){
         message.channel.send("C'est darty mon kiki !");
         console.log('darty');
-    }   
+    }    
+    if (message.content.match(/a plus/i)){
+        message.channel.send("dans l'bus !:bus:");
+        console.log('plus');
+    }  
     if (message.content.match(/hello/i)){
         message.channel.send("Hi, how are you ?");
         console.log('hello');
