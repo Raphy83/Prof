@@ -1,6 +1,6 @@
 {
   "_from": "r-package-json@^1.0.0",
-  "_id": "r-package-json@1.0.0",
+  "_id": "r-package-json@1.0.8",
   "_inBundle": false,
   "_integrity": "sha512-y+dKPLBYKcNMY8pNy+m8YLUqeGsEhhOu0wrqfu1yr8yGX+08CzMq2uUV5GSkGA21GcaIyt6lQAiSoD+DFf3/ag==",
   "_location": "/r-package-json",
@@ -23,7 +23,7 @@
   "_spec": "r-package-json@^1.0.0",
   "_where": "D:\\Bot\\node_modules\\git-package-json",
   "author": {
-    "name": "IonicăBizău",
+    "name": "Ionică Bizău",
     "email": "bizauionica@gmail.com",
     "url": "https://ionicabizau.net"
   },
@@ -78,5 +78,5 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "1.0.0"
+  "version": "1.0.8"
 }
