@@ -3,7 +3,6 @@ var bot = new Discord.Client();
 const cfg = require('./index.json');
 const token = process.env.token;
 var randnum = 0;
-
 bot.login(token);
 
 function random (min,max){
@@ -11,7 +10,6 @@ function random (min,max){
     max = Math.floor(15);
     randnum = Math.floor(Math.random() * (max - min) + min);
 }
-
 bot.on('ready', () => {
     bot.user.setPresence({ game: { name:'motiver les gens' , type: 0} });
     console.log('bot Ready !');
