@@ -172,6 +172,6 @@ if (message.content === "insulte-moi prof"){
         message.channel.send("Bougre de phénomène de tonnerre de Brest !");
         console.log("randum");
 }
-});
+}});
 
 
