@@ -2,7 +2,9 @@ const Discord = require('discord.js');
 var bot = new Discord.Client();
 const cfg = require('./index.json');
 const token = process.env.token;
-var randnum = 0
+var randnum = 0;
+
+bot.login(token);
 
 function random (min,max){
     min = Math.ceil(0);
@@ -172,4 +174,4 @@ if (message.content === "insulte-moi prof"){
 }
 });
 
-bot.login(token);
+
