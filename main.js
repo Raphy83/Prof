@@ -96,6 +96,6 @@ bot.on('message' , message => {
 if( swearWords.some(word => message.content.includes(word)) ) {
   message.reply("Ohhhhhhhhhh ! Bravo ! :clap:");
 }
-}); 
+});
 
 bot.login(token);
