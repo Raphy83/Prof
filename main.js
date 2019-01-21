@@ -4,6 +4,11 @@ const cfg = require('./index.json');
 const token = process.env.token;
 var randnum = 0
 
+function random (min,max){
+    min = Math.ceil(0);
+    max = Math.floor(9);
+    randnum = Math.floor(Math.random() * (max - min) + min);
+}
 
 bot.on('ready', () => {
     bot.user.setPresence({ game: { name:'motiver les gens' , type: 0} });
@@ -166,11 +171,5 @@ if (message.content === "insulte-moi prof"){
         console.log("randum");
 }
 });
-
-function random (min,max){
-    min = Math.ceil(0);
-    max = Math.floor(9);
-    randnum = Math.floor(Math.random() * (max - min) + min);
-}
 
 bot.login(token);
