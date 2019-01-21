@@ -2,14 +2,20 @@ const Discord = require('discord.js');
 var bot = new Discord.Client();
 const cfg = require('./index.json');
 const token = process.env.token;
+var randnum = 0
+
 
 bot.on('ready', () => {
     bot.user.setPresence({ game: { name:'motiver les gens' , type: 0} });
     console.log('bot Ready !');
 });
 bot.on('message' , message => {
-    if (message.content.match(/bonjour/i)){
+    if (message.content.includes("bonjour")){
         message.reply("Je vous souhaite également une bonne journée ! Aller ! Au boulot !");
+        console.log('bonjour');
+    }
+    if (message.content.includes("Bonjour")){
+        message.reply("Qu'entendez vous par là ? Me souhaitez vous le bon jour ou constatez vous que c'est une bonne journée, que je le veuille ou non, ou encore que c'est une journée où il faut être bon ?");
         console.log('bonjour');
     }
     if (message.content === "ping"){
@@ -69,7 +75,7 @@ bot.on('message' , message => {
         console.log('bot');
     } 
     if (message.content.match(/a demain/i)){
-        message.channel.send("je n'ai que des transistors au bout des circuits, les mains ne me seraient d'aucune utilité, même deux ! Chaque année des milliers de ROBOTS sont touchés par l'humour-à-deux-balles. Cette maladie n'est pas une fatalité. Aidez-les ! Faites un don pour le Prof ! Voilà, comme ça je me fais même un peu d'argent, c'est pas plus mal !");
+        message.channel.send("Dans le train :steam_locomotive: !");
         console.log('demain');
     } 
     if (message.content.match(/à demain/i)){
@@ -95,7 +101,76 @@ bot.on('message' , message => {
     const swearWords = ["socioconstructivisme", "inférence", "socio-constructivisme", "conjecture"];
 if( swearWords.some(word => message.content.includes(word)) ) {
   message.reply("Ohhhhhhhhhh ! Bravo ! :clap:");
+ }
+    
+if (message.content === "insulte-moi prof"){
+    random()
+    if(randnum == 0){
+        message.channel.send("Bougre de faux-jeton à la sauce tartare");
+        console.log("random");
+    }
+    if(randnum == 1){
+        message.channel.send("Coloquinte à la graisse de hérisson !");
+        console.log("random");
+    }
+    if(randnum == 2){
+        message.channel.send("Zouave interplanétaire !");
+        console.log("randum");
+    }
+    if(randnum == 3){
+        message.channel.send("Ectoplasme à roulettes !");
+        console.log("randum");
+    }
+    if(randnum == 4){
+        message.channel.send("Bougre d’extrait de cornichon !");
+        console.log("randum");
+    }
+    if(randnum == 5){
+        message.channel.send("Patagon de zoulous !");
+        console.log("randum");
+    }   
+    if(randnum == 6){
+        message.channel.send("Anacoluthe !");
+        console.log("randum");
+    }  
+    if(randnum == 7){
+        message.channel.send("Catachrèse !");
+        console.log("randum");
+    }  
+    if(randnum == 8){
+        message.channel.send("Bougre d’extrait de crétin des Alpes !");
+        console.log("randum");
+    }  
+    if(randnum == 9){
+        message.channel.send("Astronaute d'eau douce !");
+        console.log("randum");
+    }  
+    if(randnum == 10){
+        message.channel.send("Simili-martien à la graisse de cabestan !");
+        console.log("randum");
+    }  
+    if(randnum == 11){
+        message.channel.send("Concentré de moules à gaufres !");
+        console.log("randum");
+    }  
+    if(randnum == 12){
+        message.channel.send("Papou des Carpates !");
+        console.log("randum");
+    }  
+    if(randnum == 13){
+        message.channel.send("Sombre oryctérope !");
+        console.log("randum");
+    }  
+    if(randnum == 14){
+        message.channel.send("Bougre de phénomène de tonnerre de Brest !");
+        console.log("randum");
 }
 });
+
+function random (min,max){
+    min = Math.ceil(0);
+    max = Math.floor(9);
+    randnum = Math.floor(Math.random() * (max - min) + min);
+}
 
 bot.login(token);
