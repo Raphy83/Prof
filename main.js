@@ -28,7 +28,7 @@ bot.on('message' , message => {
         message.channel.send("d'agneau");
         console.log('go');
     }  
-    if (message.content.includes ("c'est parti")){
+    if (message.content.includes ("c\'est parti")){
         message.channel.send("C'est darty mon kiki !");
         console.log('darty');
     }    
@@ -83,6 +83,10 @@ bot.on('message' , message => {
     if (message.content.match(/file/i)){
         message.channel.send("du coton");
         console.log('file');
+    }   
+    if (message.content.match(/faute/i)){
+        message.channel.send("Nous préférons employer le terme **erreur**. Une faute-du latin falsus-est un manquement à une règle, alors qu'une erreur-du latin error-n'est rien d'autre qu'une méprise, un défaut de jugement ou d'appréciation");
+        console.log('faute');
     }   
     if (message.content.match(/question/i)){
         message.channel.send("réponse :stuck_out_tongue_closed_eyes:");
