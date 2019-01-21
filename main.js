@@ -8,7 +8,7 @@ bot.login(token);
 
 function random (min,max){
     min = Math.ceil(0);
-    max = Math.floor(9);
+    max = Math.floor(15);
     randnum = Math.floor(Math.random() * (max - min) + min);
 }
 
