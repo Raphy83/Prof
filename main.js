@@ -99,8 +99,8 @@ bot.on('message' , message => {
         message.channel.send("Nous préférons employer le terme **erreur**. Une Faute - du latin falsus - est un manquement à une règle, alors qu'une erreur - du latin error - n'est rien d'autre qu'une méprise, un défaut de jugement ou d'appréciation");
         console.log('faute');
     }   
-    if (message.content.match(/question/i)){
-        message.channel.send("réponse :stuck_out_tongue_closed_eyes:");
+    if (message.content.includes("question")){
+        message.channel.send("Celui qui pose une Question risque cinq minutes d'avoir l'air bête. Celui qui ne pose pas de Question restera bête toute sa vie - proverbe chinois.");
         console.log('question');
     }     
     const swearWords = ["socioconstructivisme", "inférence", "socio-constructivisme", "conjecture"];
@@ -118,7 +118,7 @@ if (message.content === "insulte-moi prof"){
         message.channel.send("Coloquinte à la graisse de hérisson !");
         console.log("random");
     }
-    if(randnum == 2){
+    if(randnum == 6){
         message.channel.send("Zouave interplanétaire !");
         console.log("randum");
     }
@@ -138,7 +138,7 @@ if (message.content === "insulte-moi prof"){
         message.channel.send("Anacoluthe !");
         console.log("randum");
     }  
-    if(randnum == 7){
+    if(randnum == 2){
         message.channel.send("Catachrèse !");
         console.log("randum");
     }  
