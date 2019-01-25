@@ -100,7 +100,7 @@ bot.on('message' , message => {
         console.log('faute');
     }   
     if (message.content.includes("question")){
-        message.channel.send("Celui qui pose une Question risque cinq minutes d'avoir l'air bête. Celui qui ne pose pas de Question restera bête toute sa vie - proverbe chinois.");
+        message.channel.send("J\'ai rien dit  :shrug:");
         console.log('question');
     }     
     const swearWords = ["socioconstructivisme", "inférence", "socio-constructivisme", "conjecture"];
