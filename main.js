@@ -99,10 +99,6 @@ bot.on('message' , message => {
         message.channel.send("Nous préférons employer le terme **erreur**. Une Faute - du latin falsus - est un manquement à une règle, alors qu'une erreur - du latin error - n'est rien d'autre qu'une méprise, un défaut de jugement ou d'appréciation");
         console.log('faute');
     }   
-    if (message.content.includes("question")){
-        message.channel.send("J\'ai rien dit  :shrug:");
-        console.log('question');
-    }     
     const swearWords = ["socioconstructivisme", "inférence", "socio-constructivisme", "conjecture"];
 if( swearWords.some(word => message.content.includes(word)) ) {
   message.reply("Ohhhhhhhhhh ! Bravo ! :clap:");
