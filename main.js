@@ -39,11 +39,11 @@ bot.on('message' , message => {
         message.channel.send("d'agneau");
         console.log('go');
     }  
-    if (message.content.includes ("c\'est parti")){
+    if (message.content.includes("c\'est parti")){
         message.channel.send("C'est darty mon kiki !");
         console.log('darty');
     }    
-    if (message.content.includes ("qui es-tu prof")){
+    if (message.content.includes("qui es-tu prof")){
         message.channel.send("Puisque celà ne se voit pas, je suis un BOT, un agent logiciel automatique ou semi-automatique qui interagit avec des serveurs informatiques. Un BOT se connecte et interagit avec le serveur comme un programme client utilisé par un humain (mouarf), d'où le terme « BOT », qui est la contraction par **aphérèse** de \"ROBOT\". Je vous laisse chercher ce mot, ça pourrait vous servir ...");
         console.log('qui');
     }    
@@ -64,10 +64,10 @@ bot.on('message' , message => {
         console.log('hello');
     }    
     if (message.content.match(/coucou/i)){
-        message.channel.send(":bird: ");
+        message.channel.send(":bird:");
         console.log('coucou');
     }  
-    if (message.content.includes ("fine and you")){
+    if (message.content.includes("fine and you")){
         message.channel.send("Very well !");
         console.log('fine');
     }
@@ -75,7 +75,7 @@ bot.on('message' , message => {
         message.channel.send(":kissing_heart::zzz:");
         console.log('BN');
     }  
-    if (message.content.includes ("bot") || message.content.includes('Bot')){
+    if (message.content.includes("bot") || message.content.includes('Bot')){
         message.channel.send("BOT ? On parle de moi ?  :smiley:");
         console.log('bot');
     } 
@@ -91,7 +91,7 @@ bot.on('message' , message => {
         message.channel.send(":watch:");
         console.log('montre');
     }   
-    if (message.content.includes(" je file")){
+    if (message.content.includes("je file")){
         message.channel.send("du coton");
         console.log('file');
     }   
