@@ -20,7 +20,7 @@ bot.on('message' , message => {
         console.log('bonjour');
     }
     if (message.content.includes("Bonjour")){
-        message.reply("Qu'entendez vous par là ? Me souhaitez vous le bon jour ou constatez vous que c'est une bonne journée, que je le veuille ou non, ou encore que c'est une journée où il faut être bon ?");
+        message.reply("Non je boude !");
         console.log('bonjour');
     }
     if (message.content === "ping"){
@@ -60,11 +60,11 @@ bot.on('message' , message => {
         console.log('marche2');
     }  
     if (message.content.match(/hello/i)){
-        message.channel.send("Hi, how are you ?");
+        message.channel.send("Hi !");
         console.log('hello');
     }    
     if (message.content.match(/coucou/i)){
-        message.channel.send("Un bon jour également - bien que je ne voie pas le rapport avec un oiseau");
+        message.channel.send(":bird: ");
         console.log('coucou');
     }  
     if (message.content.includes ("fine and you")){
@@ -91,7 +91,7 @@ bot.on('message' , message => {
         message.channel.send(":watch:");
         console.log('montre');
     }   
-    if (message.content.match(/file/i)){
+    if (message.content.includes(" je file")){
         message.channel.send("du coton");
         console.log('file');
     }   
