@@ -20,7 +20,7 @@ bot.on('message' , message => {
         console.log('bonjour');
     }
     if (message.content.includes("Bonjour")){
-        message.reply("Non je boude !");
+        message.reply("Bonjour");
         console.log('bonjour');
     }
     if (message.content === "ping"){
