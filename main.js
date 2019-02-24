@@ -19,10 +19,6 @@ bot.on('message' , message => {
         message.reply("Je vous souhaite également une bonne journée ! Aller ! Au boulot !");
         console.log('bonjour');
     }
-    if (message.content.includes("Bonjour")){
-        message.reply("Bonne journée à toi aussi");
-        console.log('bonjour');
-    }
     if (message.content === "ping"){
         message.channel.send("pong !");
         console.log('ping');
@@ -104,7 +100,7 @@ if( swearWords.some(word => message.content.includes(word)) ) {
   message.reply("Ohhhhhhhhhh ! Bravo ! :clap:");
  }
     
-if (message.content === "insulte-moi prof"){
+if (message.content === "Bonjour"){
     random()
     if(randnum == 0){
         message.channel.send("Bougre de faux-jeton à la sauce tartare");
