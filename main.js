@@ -59,8 +59,8 @@ bot.on('message' , message => {
         message.channel.send("Hi !");
         console.log('hello');
     }    
-    if (message.content.match(/coucou/i)){
-        message.channel.send(":bird:");
+    if (message.content.match(/cou cou/i)){
+        message.channel.send("cui cui @Audrey#7707");
         console.log('coucou');
     }  
     if (message.content.includes("fine and you")){
