@@ -100,7 +100,7 @@ if( swearWords.some(word => message.content.includes(word)) ) {
   message.reply("Ohhhhhhhhhh ! Bravo ! :clap:");
  }
     
-if (message.content === "Bonjour"){
+if (message.content.match(/bonjour/i)){
     random()
     if(randnum == 0){
         message.channel.send("Bougre de faux-jeton à la sauce tartare");
