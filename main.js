@@ -26,6 +26,10 @@ bot.on('message' , message => {
     if (message.content.match(/salut/i)){
         message.channel.send(":wave:");
         console.log('salut');
+    }    
+    if (message.content.match(/bonjour/i)){
+        message.channel.reply("Bonne journée");
+        console.log('bonjour');    
     }       
     if (message.content.match(/j\'y go/i)){
         message.channel.send("d'agneau");
@@ -55,8 +59,8 @@ bot.on('message' , message => {
         message.channel.send("Hi !");
         console.log('hello');
     }    
-    if (message.content.match(/cou cou/i)){
-        message.channel.send("cui cui @Audrey#7707");
+    if (message.content.match(/coucou/i)){
+        message.channel.reply("Bonne journée");
         console.log('coucou');
     }  
     if (message.content.includes("fine and you")){
@@ -96,7 +100,7 @@ if( swearWords.some(word => message.content.includes(word)) ) {
   message.reply("Ohhhhhhhhhh ! Bravo ! :clap:");
  }
     
-if (message.content.match(/bonjour/i)){
+if (message.content.match(/insulte/i)){
     random()
     if(randnum == 0){
         message.channel.send("Bougre de faux-jeton à la sauce tartare");
