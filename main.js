@@ -28,7 +28,7 @@ bot.on('message' , message => {
         console.log('salut');
     }    
     if (message.content.match(/bonjour/i)){
-        message.channel.reply("Bonne journée");
+        message.reply("Bonne journée");
         console.log('bonjour');    
     }       
     if (message.content.match(/j\'y go/i)){
@@ -60,7 +60,7 @@ bot.on('message' , message => {
         console.log('hello');
     }    
     if (message.content.match(/coucou/i)){
-        message.channel.reply("Bonne journée");
+        message.reply("Bonne journée");
         console.log('coucou');
     }  
     if (message.content.includes("fine and you")){
