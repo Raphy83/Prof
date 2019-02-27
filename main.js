@@ -19,6 +19,7 @@ bot.on('message' , async message => {
     if (message.author.bot) return;
     
     if (message.content.startsWith(uneCommande)){
+        message.delete();
         const str = message.content.substring(uneCommande.length);
         message.channel.send(str);
     } 
