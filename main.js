@@ -25,6 +25,7 @@ bot.on('message' , async message => {
         message.delete();
         const str = message.content.substring(uneCommande.length);
         message.channel.send(str);
+        console.log('prof');
     } 
     if (message.content === "ping"){
         message.channel.send("pong !");
