@@ -15,6 +15,7 @@ bot.on('ready', () => {
     console.log('bot Ready !');
 });
 bot.on('message' , message => {
+    if (message.author.bot) return;
         if (message.content === "ping"){
         message.channel.send("pong !");
         console.log('ping');
