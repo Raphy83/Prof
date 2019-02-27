@@ -16,7 +16,7 @@ bot.on('ready', async () => {
     console.log('bot Ready !');
 });
 bot.on('message' , async message => {
-    if (message.author.bot) return;
+    if(message.author.id === "536108911703359498") return;
     
     if (message.content.startsWith(uneCommande)){
         message.delete();
