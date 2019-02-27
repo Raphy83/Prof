@@ -17,6 +17,9 @@ bot.on('ready', async () => {
 });
 bot.on('message' , async message => {
     if(message.author.id === "536108911703359498") return;
+    let messageArray = message.content.split(" ");
+    let cmd = messageArray[0];
+    let args = messageArray.slice(1);
     
     if (message.content.startsWith(uneCommande)){
         message.delete();
