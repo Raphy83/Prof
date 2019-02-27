@@ -33,15 +33,7 @@ bot.on('message' , async message => {
     if (message.content === "pong"){
         message.channel.send("Non ! Je ne dirai pas ping !");
         console.log('pong');
-    }    
-    if (message.content.match(/salut/i)){
-        message.channel.send(":wave:");
-        console.log('salut');
-    }    
-    if (message.content.match(/bonjour/i)){
-        message.reply("Bonne journée");
-        console.log('bonjour');    
-    }       
+    }           
     if (message.content.match(/j\'y go/i)){
         message.channel.send("d'agneau");
         console.log('go');
@@ -66,18 +58,6 @@ bot.on('message' , async message => {
         message.channel.send("ça court même !");
         console.log('marche2');
     }  
-    if (message.content.match(/hello/i)){
-        message.channel.send("Hi !");
-        console.log('hello');
-    }    
-    if (message.content.match(/coucou/i)){
-        message.reply("Bonne journée");
-        console.log('coucou');
-    }  
-    if (message.content.includes("fine and you")){
-        message.channel.send("Very well !");
-        console.log('fine');
-    }
     if (message.content.match(/bonne nuit/i)){
         message.channel.send(":kissing_heart::zzz:");
         console.log('BN');
