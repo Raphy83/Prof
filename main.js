@@ -153,6 +153,7 @@ if (message.content.match(/insulte/i)){
         message.channel.send("Bougre de phénomène de tonnerre de Brest !");
         console.log("randum");
 }
+    
 }});
 
 
