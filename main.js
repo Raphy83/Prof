@@ -10,11 +10,11 @@ function random (min,max){
     max = Math.floor(15);
     randnum = Math.floor(Math.random() * (max - min) + min);
 }
-bot.on('ready', () => {
+bot.on('ready', async () => {
     bot.user.setPresence({ game: { name:'motiver les gens' , type: 0} });
     console.log('bot Ready !');
 });
-bot.on('message' , message => {
+bot.on('message' , async message => {
     if (message.author.bot) return;
         if (message.content === "ping"){
         message.channel.send("pong !");
