@@ -3,6 +3,7 @@ const bot = new Discord.Client();
 const cfg = require('./index.json');
 const token = process.env.token;
 var randnum = 0;
+const uneCommande = '/say '
 bot.login(token);
 
 function random (min,max){
@@ -16,7 +17,12 @@ bot.on('ready', async () => {
 });
 bot.on('message' , async message => {
     if (message.author.bot) return;
-        if (message.content === "ping"){
+    
+    if (message.content.startsWith(uneCommande)){
+        const str = message.content.substring(uneCommande.length);
+        message.channel.send(str);
+    } 
+    if (message.content === "ping"){
         message.channel.send("pong !");
         console.log('ping');
     }
