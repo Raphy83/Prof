@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-var bot = new Discord.Client();
+const bot = new Discord.Client();
 const cfg = require('./index.json');
 const token = process.env.token;
 var randnum = 0;
